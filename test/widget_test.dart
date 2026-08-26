@@ -8,7 +8,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:to_do_list_app/main.dart';
 
 void main() {
   testWidgets('app renders a basic screen', (WidgetTester tester) async {
