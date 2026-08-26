@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Flutter To-Do App
 
 A simple To-Do List application built using Flutter and Hive.
@@ -19,4 +19,3 @@ A simple To-Do List application built using Flutter and Hive.
 =======
 # flutter-todo-app
 A Flutter To-Do List application with Hive local storage, task completion, and a clean, responsive user interface
->>>>>>> 1e6ca04 (Initial commit)
