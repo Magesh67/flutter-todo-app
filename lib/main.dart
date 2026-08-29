@@ -56,17 +56,17 @@ class _MyAppState extends State<MyApp> {
      theme: ThemeData(
        scaffoldBackgroundColor: const Color(0xFFF5F5F5),
        appBarTheme: const AppBarTheme(
-         backgroundColor: Color(0xFFE0E0E0),
-         foregroundColor: Color(0xFF212121),
+         backgroundColor: Color.fromARGB(255, 107, 105, 105),
+         foregroundColor: Colors.white,
          elevation: 0,
        ),
        colorScheme: ColorScheme.fromSeed(seedColor: Colors.grey),
      ),
      home: Scaffold(
-       backgroundColor: const Color(0xFFF5F5F5),
+       backgroundColor: const Color.fromARGB(255, 184, 182, 182),
        appBar: AppBar(
-         title: const Text('Simple TO DO', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
-         centerTitle: true,
+         title: const Text('My Tasks', style: TextStyle(fontSize: 18, )),
+         
        ),
        body: Padding(
          padding: const EdgeInsets.only(top: 12, bottom: 110),
@@ -108,12 +108,12 @@ class _MyAppState extends State<MyApp> {
                  child: TextField(
                    controller: _controller,
                    decoration: InputDecoration(
-                     hintText: 'Add a task',
+                     hintText: 'Add a new task',
                      hintStyle: const TextStyle(color: Colors.grey),
                      filled: true,
-                     fillColor: Colors.white,
+                     fillColor: const Color.fromARGB(255, 105, 103, 103),
                      border: OutlineInputBorder(
-                       borderRadius: BorderRadius.circular(18),
+                       borderRadius: BorderRadius.circular(10),
                        borderSide: BorderSide.none,
                      ),
                      contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),

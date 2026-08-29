@@ -32,44 +32,41 @@ class Todolist extends StatelessWidget {
             ),
           ],
         ),
-        child: Container(
-          padding: const EdgeInsets.all(14),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: const Color(0xFFE0E0E0)),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.03),
-                blurRadius: 10,
-                offset: const Offset(0, 4),
-              ),
-            ],
-          ),
-          child: Row(
-            children: [
-              Checkbox(
-                value: taskCompleted,
-                onChanged: onChanged,
-                activeColor: const Color(0xFF616161),
-                checkColor: Colors.white,
-                side: const BorderSide(color: Color(0xFFBDBDBD)),
-              ),
-              Expanded(
-                child: Text(
-                  taskName,
-                  style: TextStyle(
-                    color: const Color(0xFF212121),
-                    fontSize: 16,
-                    decoration: taskCompleted
-                        ? TextDecoration.lineThrough
-                        : TextDecoration.none,
-                    decorationColor: const Color(0xFF616161),
-                    decorationThickness: 2,
+        child: Card(
+          child: Container(
+            padding: const EdgeInsets.all(14),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(15),
+              border: Border.all(color:  Colors.white),
+             
+             
+            ),
+            child: Row(
+              children: [
+                Checkbox(
+                  value: taskCompleted,
+                  onChanged: onChanged,
+                  activeColor: const Color(0xFF616161),
+                  checkColor: Colors.white,
+                  side: const BorderSide(color: Color(0xFFBDBDBD)),
+                ),
+                Expanded(
+                  child: Text(
+                    taskName,
+                    style: TextStyle(
+                      color: const Color(0xFF212121),
+                      fontSize: 16,
+                      decoration: taskCompleted
+                          ? TextDecoration.lineThrough
+                          : TextDecoration.none,
+                      decorationColor: const Color(0xFF616161),
+                      decorationThickness: 2,
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
