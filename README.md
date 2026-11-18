@@ -7,6 +7,7 @@ A simple To-Do List application built using Flutter and Hive.
 - Add tasks
 - Mark tasks as completed
 - Delete tasks
+- Edit tasks
 - Store data locally using Hive
 
 ## Technologies Used
@@ -18,4 +19,4 @@ A simple To-Do List application built using Flutter and Hive.
 
 =======
 # flutter-todo-app
-A Flutter To-Do List application with Hive local storage, task completion, and a clean, responsive user interface
+A Flutter To-Do List application with Hive local storage, adding task ,edit existing tasks, task completion, and a clean, responsive user interface
